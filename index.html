@@ -9,19 +9,19 @@
     <center>
     <form action="" method="post">
         <p>digite seu nome:</p>
-        <input type="text" name="nome" placeholder="Ex: Thomas Turbando">
+        <input type="text" name="nome" placeholder="Ex: Thomas Turbando" required>
         <br>
         <p>digite seu email:</p>
-        <input type="email" name="email" placeholder="Ex: xxxxxxx@gmail.com" value="@escola.pr.gov.br">
+        <input type="email" name="email" placeholder="Ex: xxxxxxx@gmail.com" value="@escola.pr.gov.br" required>
         <br>
         <p>digite seu número:</p>
-        <input type="number" name="phone" placeholder="Ex: (xx)xxxxx-xxxx">
+        <input type="number" name="phone" placeholder="Ex: (xx)xxxxx-xxxx" required>
         <br>
         <input type="radio" name="work" value="sim" checked> sim
         <input type="radio" name="work" value="não"> não
         <br>
         <p>selecione seu estado:</p>
-        <select name="estados" id="">
+        <select name="estados" id="" required>
             <option value="1">Amazonas</option>
         </select>
         <br>
@@ -29,7 +29,8 @@
         <br>
         <input type="checkbox" name="novidade" checked> aceita receber novidades da empresa?
         <br> 
-        <button type="button"></button>
+        <button type="submit">enviar</button>
+        <button type="reset">apagar</button>
         </center>
     </form>
 </body>
